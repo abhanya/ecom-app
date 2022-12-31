@@ -1,0 +1,60 @@
+{% extends 'pages/custhome.html' %}
+{% load static  %}
+
+
+
+{% block content %}
+<style>
+.cardcontent{
+    padding-left: 200px;
+    padding-top: 100px;
+    width: 1000px;
+}
+.bg{
+    {% comment %} background-image: url('static/images/login.webp'); {% endcomment %}
+    {% comment %} background-color: rgb(250, 226, 175); ;  {% endcomment %}
+    
+ } 
+.card{
+    {% comment %} background-image: url('static/images/login.webp'); {% endcomment %}
+}
+.col-12{
+    padding-left: 200px;
+}
+</style>
+<body class="bg">
+    <div class="container-fluid">
+        <div class="container mt-5 pt-5 mb-5 pb-5 "><h4 style="padding-left : 200px">SIGNUP</h4>
+                <form method="POST">
+                    <div class="col-12 sm-8 md-6 m-auto">
+                        <div class="card shadow border w-75" style="background-color: rgb(250, 226, 175);">
+                            <div class="cardcontent">
+                                <label for="exampleInputEmail1" class="form-label">name</label>
+                                <input type="text" class="form-control w-50" id="name" name="c_name">
+                            
+                                <label for="exampleInputEmail1" class="form-label">address</label>
+                                <textarea class="form-control w-50" id="address" rows="3" name="c_add"></textarea>
+                            
+                                <label for="" class="form-label">Gender :</label>
+                                <input type="radio"  value="male" id="male" name="gen">male
+                                <input type="radio"  value="female" id="female" name="gen">female<br>
+
+                                <label for="exampleInputEmail1" class="form-label">phone</label>
+                                <input type="text" class="form-control w-50" id="phone" name="ph">
+                            
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control w-50" id="email" name="em">
+                                <span id="e_error"></span>
+                            
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control w-50" id="Pass" name="passwrd"><br>
+                            
+                                <button type="submit" class="btn btn-primary" id="submit">Submit</button><br><br>   
+                            </div>                           
+                        </div>
+                    </div>
+                </form>    
+        </div>         
+    </div>
+
+{% endblock %}

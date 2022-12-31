@@ -1,0 +1,39 @@
+{% extends 'pages/custhome.html' %}
+{% load static  %}
+
+{% block content %}
+<style>
+    .div{
+      
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+    .card{
+        margin-left: 500px;
+
+
+    }
+    .body{
+        height: 400px;
+        background-color: rgb(245, 211, 170);
+    }
+    .card-img-top{
+        padding-top: 0px;
+    }
+</style>
+<div class="body">
+    <div class="card shadow border text-center " style="width: 24rem;">
+        <img src="{% static 'images/cartsignup.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">signup to view your cart items</h5>
+        <p class="card-text">
+            <label for="exampleInputEmail1" class="card-label">phone</label>
+            <input type="text" class="card-control w-50" id="phone" name="ph">
+        </p>
+        <a href="#" class="btn btn-primary">continue</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

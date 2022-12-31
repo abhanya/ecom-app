@@ -1,0 +1,62 @@
+{% extends 'pages/custhome.html' %}
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    
+{% block content %}
+<style>
+    .card{
+      
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    {% comment %} .card{
+      background-image: url('static/images/login.webp');
+    }  {% endcomment %}
+
+.body{
+      {% comment %} background-image: url('static/images/login.webp'); {% endcomment %}
+      {% comment %} background-color:  rgb(245, 211, 170); {% endcomment %}
+
+    } 
+
+  </style>
+<div class="body">
+    <div class="container">
+        <div class="card shadow border w-75 pt-5 ml-5" style="background-color: rgb(245, 211, 170);">
+            <div class="card-body">
+                <div class="cardcontent">
+                <form method="post">
+                    <label for="exampleInputEmail1" class="form-label">user name</label>
+                      <input type="text" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp" name="custn">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div><br>
+                    
+                    
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control w-50" id="exampleInputPassword1" name="cpass"><br><br>
+                    
+                     <button type="submit" class="btn btn-primary w-25">Login</button><br><br>
+                  
+                   don't have an account?<a href="{% url 'hcart:signup' %}">click here to create account</a><br><a href="{% url 'hcart:pass' %}">forgot your password?</a><br><br>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+</body>
+</html>

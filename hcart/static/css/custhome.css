@@ -1,0 +1,79 @@
+.log{
+    height: 35px;
+    align-items: flex-end;
+    background-color: black;
+    border: 1px black solid;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.logi{
+    height: 55px;
+    border-top: 4px;
+}
+.div2{
+    height: 56px;
+    border: px black solid;
+}
+.img{
+    height: px;
+    width: 100px;
+}
+.h1{
+    
+    text-align:left;
+    /* color: white; */
+}
+.h3{
+    text-align:left;
+    /* color: white; */
+}
+.btn{
+    height: 32px;
+}
+
+
+.start{
+    text-align: center;
+    height: 150px ;
+    text-decoration: wavy;
+    color: darkgoldenrod;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-content: space-around;
+    row-gap: 10px;
+    /* justify-content: space-between; */
+
+}
+
+.d-block{
+    height: 500px;
+}
+    
+.p{
+    color: white;
+}
+
+.bgimg{
+    background-image: url('../images/Group.webp');
+    height: 350px;
+    text-align: center;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px black solid;
+    height: 300px;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+  

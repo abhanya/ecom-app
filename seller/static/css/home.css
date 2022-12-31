@@ -1,0 +1,28 @@
+.header{
+    /* position: -webkit-sticky; Safari */
+    position: sticky;
+    top: 35px;
+}
+.log{
+    width: 100%; 
+    background-color: black; 
+    height: 35px;
+    position: sticky;
+    top: 0;
+}
+.navbar{
+    height: 75px;
+}
+.navbar-brand{
+    color: black;
+    padding-left: 4px;
+    padding-right: 720px;
+    width: 700px;
+}
+.d-flex{
+margin-right: 4000px;
+}
+
+.carousel-inner{
+    width: 100%;
+}
