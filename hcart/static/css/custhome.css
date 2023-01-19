@@ -74,6 +74,36 @@
 .header{
     position: sticky;
     top: 0px;
-    z-index: 999;
+    z-index: 1020;
 }
+
+.foottable{
+    background-color: black ;
+    color: orange;
+}
+
+.card-img-top{
+    transition: transform .2s;
+}
+.card-img-top:hover{
+    transform: scale(105%);
+}
+
+.btn-warning{
+
+    color: black;
+    height: 40px;
+  border: 3px solid #f79a20;
+  background-image: -webkit-linear-gradient(30deg, #f79a20 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #f79a20 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.btn-warning:hover {
+    background-position: 100%;
+    color: #f79a20;
+  }
   

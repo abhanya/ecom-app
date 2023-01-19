@@ -1,28 +1,58 @@
-.header{
-    /* position: -webkit-sticky; Safari */
-    position: sticky;
-    top: 35px;
-}
+
 .log{
     width: 100%; 
     background-color: black; 
     height: 35px;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 .navbar{
     height: 75px;
+    width: 100%;
+   
 }
 .navbar-brand{
     color: black;
-    padding-left: 4px;
-    padding-right: 720px;
-    width: 700px;
+width: 100%;
+    
 }
-.d-flex{
-margin-right: 4000px;
-}
+
 
 .carousel-inner{
     width: 100%;
+}
+.header{
+
+    position: sticky;
+    top: 35px;
+    left: 0;
+    display: flex;
+    z-index: 999;
+    width: 100%;
+}
+
+.discr{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+.foottable{
+    background-color: black;
+    color: orange;
+}
+.why{
+    text-align: center;
+}
+.row{
+    column-gap: 60px;
+    margin-left: 150px;
+}
+.card{
+    background-color: orange;
+}
+.seln{
+    padding-left: 20px;
 }

@@ -21,6 +21,6 @@ urlpatterns = [
     path('',include('hcart.urls')),
     path('',include('seller.urls')),
     path('',include('customer.urls')),
-
+    path('',include('hcartadmin.urls')),
 
 ]

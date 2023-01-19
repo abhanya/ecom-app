@@ -3,6 +3,8 @@ from . import views
 
 app_name = 'seller'
 urlpatterns = [
-    path('sellersignup',views.signup,name="s_signup"),
     path('sellerhome',views.home,name="sellerhome"),
+    path('addproduct',views.addpro,name="addproduct"),
+    path('catlog',views.catlog,name="catlog"),
+    path('sellpassword',views.sellpassword,name="sellpassword"),
 ]

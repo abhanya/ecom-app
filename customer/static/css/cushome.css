@@ -15,11 +15,9 @@
 }
 
 .header{
-    /* position: -webkit-sticky; Safari */
     position: sticky;
-    top: 35px;
+    top: 0px;
     z-index: 999;
-    display: flex;
 }
 .log{
     width: 100%; 
@@ -38,4 +36,11 @@
 }
 .row-12{
     width: 100%;
+}
+.foottable{
+    background-color: black;
+    color: orange;
+}
+.cusn{
+    margin-left: 10px;
 }
