@@ -8,6 +8,7 @@ class Customer(models.Model):
     gender = models.CharField(max_length=50)
     cust_phone = models.BigIntegerField()
     cust_pass = models.CharField(max_length=8)
+    cust_pic = models.ImageField(upload_to='customer/',default= 'customer/profil.webp')
 
 class Seller(models.Model):
     seller_name =models.CharField(max_length=20)

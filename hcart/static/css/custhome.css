@@ -13,21 +13,23 @@
     border-top: 4px;
 }
 .div2{
-    height: 56px;
-    border: px black solid;
+    height: 90px;
+    color: black;
+    /* margin-top: 35px; */
+
 }
 .img{
-    height: px;
-    width: 100px;
+    height: 70px;
+    width: 80px;
 }
 .h1{
     
     text-align:left;
-    /* color: white; */
+    color: black;
 }
 .h3{
     text-align:left;
-    /* color: white; */
+    color: black;
 }
 .btn{
     height: 32px;
@@ -38,7 +40,7 @@
     text-align: center;
     height: 150px ;
     text-decoration: wavy;
-    color: darkgoldenrod;
+    color: orange;
 }
 
 .cards{
@@ -52,7 +54,8 @@
 }
 
 .d-block{
-    height: 500px;
+    height: 530px;
+    margin-top: 0px;
 }
     
 .p{
@@ -75,6 +78,7 @@
     position: sticky;
     top: 0px;
     z-index: 1020;
+    
 }
 
 .foottable{
@@ -82,11 +86,11 @@
     color: orange;
 }
 
-.card-img-top{
+.card{
     transition: transform .2s;
 }
-.card-img-top:hover{
-    transform: scale(105%);
+.card:hover{
+    transform: scale(102%);
 }
 
 .btn-warning{
@@ -107,3 +111,10 @@
     color: #f79a20;
   }
   
+.div2:hover{
+    color: #f79a20;
+}
+
+.body{
+    background-color: rgb(253, 240, 241);
+}

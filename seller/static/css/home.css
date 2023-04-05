@@ -51,8 +51,14 @@ width: 100%;
     margin-left: 150px;
 }
 .card{
-    background-color: orange;
+    background-color: rgb(255, 255, 254);
 }
 .seln{
-    padding-left: 20px;
+ 
+    padding-left: 5px;
+}
+
+.thrd{
+    text-align: right;
+    margin-bottom: 200px;
 }

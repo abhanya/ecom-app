@@ -1,56 +1,52 @@
-{% extends 'pages/adminhome.html' %}
+{% extends 'pages/adminmaster.html' %}
 {% load static %}
 {% block content %}
+<div class="col-9 mt-5">
 <div class="text-center p-4">
-    <h1>APPROVE SELLER</h1>
+    <h4>APPROVE SELLER</h4>
 </div>
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="col-sm-12">
-            <table class="table table-warning table-striped text-center  border shadow">
-                <tr>
-                    <th>Seller Name</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                    <th>Phone Number</th>
-                    <th>Gender</th>
-                    <th>Company Name</th>
-                    <th>Account Holder Name</th>
-                    <th>IFSC</th>
-                    <th>Branch</th>
-                    <th>Account Number</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        
-                        <button class="btn btn-primary"><a href="">
-                                style="color: aliceblue;text-decoration: none;">APPROVE</a></button>
-                        
+<div class="container">
+<div class="row">
+    
+    <div class="">
+        <table class="table border shadow p-3">
+            <thead style="background:orange;">
+            <th>Seller Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Company Name</th>
+            <th>Account Holder Name</th>
+            <th>IFSC</th>
+            <th>Account Number</th>
+            <th>Status</th>
+            <th>Remove</th>
+            </thead>
+            <tbody>
+                {% for seller in seller_app %}
+                <tr class="table-light">
+                    <td>{{ seller.seller_name|upper }}</td>
+                    <td>{{ seller.seller_add}}</td>
+                    <td>{{ seller.seller_pho }}</td>
+                    <td>{{ seller.email }}</td>
+                    <td>{{ seller.comp_name }}</td>
+                    <td>{{ seller.acc_hold }}</td>
+                    <td>{{ seller.ifsc }}</td>
+                    <td>{{ seller.acc_num }}</td>                           
+                    <td>                        
+                        <button type="button" class="btn btn-success "><a href="{% url 'hcartadmin:sepprove' seller.id %} "class="link-light"> approve</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-danger">
-                            <a href="" style="color: aliceblue;text-decoration: none;">REMOVE</a>
-                        </button>
+                        <button type="button" class="btn btn-danger"><a href="{% url 'hcartadmin:dispprove' seller.id %} "class="link-light">remove</button>
                     </td>
                 </tr>
-                
-            </table>
-        </div>
-
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
+
+</div>
+</div>
+<div>
 </div>
 {% endblock %}

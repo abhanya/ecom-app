@@ -46,15 +46,15 @@
                 
                 <form method="post">
                   <label for="exampleInputEmail1" class="form-label col-2">user name</label>
-                    <input type="text" class="form-control w-50 " id="exampleInputEmail1"name="susrname"><br>
+                    <input type="text" class="form-control w-50 " id="exampleInputEmail1"name="susrname">
                   
-                  {{ msg }}
+                    <p style="color:red;"><b>{{ msg }}</b></p>
                     <label for="exampleInputPassword1" class="form-label col-2">Password</label>
                     <input type="password" class="form-control w-50" id="exampleInputPassword1" name="spassw"><br>
                   
-                   <button type="submit" class="btn btn-primary w-25" style="margin-left:200px;">Login</button><br><br>
-                 don't have an account?<a href="{% url 'hcart:s_signup' %}">click here to create account</a>
-                 {% comment %} <a href="{% url 'hcart:pass' %}">forgot your password?</a> {% endcomment %}
+                   <button type="submit" class="btn btn-primary w-25" style="margin-left:200px;">Login</button><br>
+                 <a href="{% url 'hcart:s_signup' %}" class="link-dark"><b>Register </b></a>
+                 <a href="{% url 'hcart:pass' %}"  class="link-warning p-3"><b>forgot password?</b></a>
                 </form>
               </div>
             </div>

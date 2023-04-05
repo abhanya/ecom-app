@@ -40,7 +40,7 @@
   </style>
 <div class="body">
     <div class="container pt-3">
-        <div class="card shadow boredr mb-3" style="max-width: 1000px; height:400px;">
+        <div class="card shadow boredr mb-5" style="max-width: 1000px; height:400px;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="{% static 'images/cust.webp' %}" class="img-fluid square " alt="..." style="height:398px ;">
@@ -53,11 +53,11 @@
                 <form method="POST">
                   
                   {% csrf_token %}
-                  <label for="exampleInputEmail1" class="form-label col-2">user name</label>
-                    <input type="text" class="form-control w-50 " id="exampleInputEmail1"name="cusernm"><br>
+                  <label for="exampleInputEmail1" class="form-label col-2">Mail id :</label>
+                    <input type="email" class="form-control w-50 " id="exampleInputEmail1" name="cusmail" placeholder="ab@gmail.com"><br>
                   
-                    {{ msg }}
-                    <label for="exampleInputPassword1" class="form-label col-2">Password</label>
+                    <p style="color:red;">{{ msg }}</p>
+                    <label for="exampleInputPassword1" class="form-label col-2">Password :</label>
                     <input type="password" class="form-control w-50" id="exampleInputPassword1" name="cstpass"><br>
                   
                    <button type="submit" class="btn btn-primary w-25" style="margin-left:200px;">Login</button><br><br>
